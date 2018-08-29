@@ -6,25 +6,23 @@ using NikamozzShop.Domain.Entites;
 
 namespace NikamoozShop.EndPoint.Console
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var builder = new DbContextOptionsBuilder();
             builder.UseSqlServer(@"server=(localdb)\ProjectsV13;database=NikamoozShopDb;integrated security=true");
-            using (var context= new NikamoozStoreContext(builder.Options))
+            using (var context = new NikamoozStoreContext(builder.Options))
             {
                 // EgerLoading(context);
                 //ServerVsClient(context);
                 //StateCheck(context);
-                //GraphInsert(context);
+                GraphInsert(context);
 
                 //Update(context);
 
 
-
                 context.SaveChanges();
-
             }
         }
 
@@ -39,27 +37,25 @@ namespace NikamoozShop.EndPoint.Console
         {
             var course = new Course
             {
-                CourseName = "MVC Core Pro",
+                CourseName = "FullStack Core",
                 StartDate = DateTime.Now.AddDays(30),
                 EndDate = DateTime.Now.AddDays(100),
-                Price = 1000,
+                Price = 2000,
                 MyDiscount = new Discount
                 {
                     Description = "Takhfif Shoro Dore",
-                    NewValue = 900
+                    NewValue = 1700
                 }
-
             };
             context.Add(course);
         }
 
         private static void StateCheck(NikamoozStoreContext context)
         {
-            Teacher teacher = new Teacher
+            var teacher = new Teacher
             {
                 FirstName = "Mohammad",
-                LastName = "Kaveh",
-
+                LastName = "Kaveh"
             };
             var state01 = context.Entry(teacher).State;
 
@@ -85,7 +81,8 @@ namespace NikamoozShop.EndPoint.Console
 
         private static void EgerLoading(NikamoozStoreContext context)
         {
-            var listCourse = context.Courses.Include(c => c.Comments).Include(c => c.CourseTeachers).ThenInclude(c => c.Teacher).ToList();
+            var listCourse = context.Courses.Include(c => c.Comments).Include(c => c.CourseTeachers)
+                .ThenInclude(c => c.Teacher).ToList();
         }
     }
 }
