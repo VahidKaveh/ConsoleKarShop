@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\01.Domain\NikamozzShop.Domain.Entites\NikamozzShop.Domain.Entites.csproj" />
+    <ProjectReference Include="..\..\02.Services\NikamoozShop.Services.Contract\NikamoozShop.Services.Contract.csproj" />
   </ItemGroup>
 
 </Project>

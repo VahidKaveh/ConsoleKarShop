@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Domain\NikamozzShop.Domain.Entites\NikamozzShop.Domain.Entites.csproj" />
+  </ItemGroup>
+
+</Project>

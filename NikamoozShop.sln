@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikamoozShop.Infrastructure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikamoozShop.EndPoint.Console", "04.EndPoint\NikamoozShop.EndPoint.Console\NikamoozShop.EndPoint.Console.csproj", "{F5D4FAE6-AF96-4ED7-995D-E218B995F186}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikamoozShop.Services.Services", "02.Services\NikamoozShop.Services.Services\NikamoozShop.Services.Services.csproj", "{22EB6517-130F-4118-AC5F-393F3B4F4D42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikamoozShop.Services.Services", "02.Services\NikamoozShop.Services.Services\NikamoozShop.Services.Services.csproj", "{22EB6517-130F-4118-AC5F-393F3B4F4D42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikamoozShop.Services.Contract", "02.Services\NikamoozShop.Services.Contract\NikamoozShop.Services.Contract.csproj", "{1843BB97-3916-4AA3-A413-5CFC4CFE1E53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{22EB6517-130F-4118-AC5F-393F3B4F4D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22EB6517-130F-4118-AC5F-393F3B4F4D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22EB6517-130F-4118-AC5F-393F3B4F4D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1843BB97-3916-4AA3-A413-5CFC4CFE1E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1843BB97-3916-4AA3-A413-5CFC4CFE1E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1843BB97-3916-4AA3-A413-5CFC4CFE1E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1843BB97-3916-4AA3-A413-5CFC4CFE1E53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{0A736402-015B-4B56-BE4B-009DAFAB399C} = {CA9ADF1A-AEE2-4EA7-A702-B9695C921EF8}
 		{F5D4FAE6-AF96-4ED7-995D-E218B995F186} = {32AAE7A0-E674-4A68-9332-88F4C6B3FF8F}
 		{22EB6517-130F-4118-AC5F-393F3B4F4D42} = {F04B739B-2411-44BC-885B-8499B95DD4D8}
+		{1843BB97-3916-4AA3-A413-5CFC4CFE1E53} = {F04B739B-2411-44BC-885B-8499B95DD4D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFA47ABF-4891-4DB1-AC94-EFF4F1579A0B}
