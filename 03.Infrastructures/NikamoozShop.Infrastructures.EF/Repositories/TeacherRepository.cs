@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NikamoozShop.Services.Contract.IRepositories;
-using NikamozzShop.Domain.Entites;
+using ConsoleKarShop.Services.Contract.IRepositories;
+using ConsoleKarShop.Domain.Entites;
 
-namespace NikamoozShop.Infrastructures.EF.Repositories
+namespace ConsoleKarShop.Infrastructures.EF.Repositories
 {
     public class TeacherRepository:Repository<Teacher>,ITeacherRepository
     {

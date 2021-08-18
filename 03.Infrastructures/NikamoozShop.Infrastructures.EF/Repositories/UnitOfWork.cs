@@ -1,12 +1,12 @@
-﻿using NikamoozShop.Services.Contract.IRepositories;
+﻿using ConsoleKarShop.Services.Contract.IRepositories;
 
-namespace NikamoozShop.Infrastructures.EF.Repositories
+namespace ConsoleKarShop.Infrastructures.EF.Repositories
 {
     public class UnitOfWork:IUnitOfWork
     {
-        private readonly NikamoozStoreContext _context;
+        private readonly ConsoleKarStoreContext _context;
 
-        public UnitOfWork(NikamoozStoreContext context)
+        public UnitOfWork(ConsoleKarStoreContext context)
         {
             _context = context;
             TeacherRepository= new TeacherRepository(_context);

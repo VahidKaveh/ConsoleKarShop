@@ -1,4 +1,4 @@
-﻿namespace NikamozzShop.Domain.Entites
+﻿namespace ConsoleKarShop.Domain.Entites
 {
     public class CourseTeacher
     {

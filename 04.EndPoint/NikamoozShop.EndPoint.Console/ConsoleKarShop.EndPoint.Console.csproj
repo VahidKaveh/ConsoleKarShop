@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\03.Infrastructures\NikamoozShop.Infrastructures.EF\NikamoozShop.Infrastructures.EF.csproj" />
+    <ProjectReference Include="..\..\03.Infrastructures\NikamoozShop.Infrastructures.EF\ConsoleKarShop.Infrastructures.EF.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace NikamoozShop.Services.Contract.IRepositories
+namespace ConsoleKarShop.Services.Contract.IRepositories
 {
 
     public interface IRepositories<TEntity> where TEntity : class

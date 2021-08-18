@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Linq;
+using ConsoleKarShop.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
-using NikamoozShop.Infrastructures.EF;
-using NikamozzShop.Domain.Entites;
 
-namespace NikamoozShop.EndPoint.Console
+namespace ConsoleKarShop.EndPoint.Console
 {
     internal class Program
     {
@@ -12,7 +10,7 @@ namespace NikamoozShop.EndPoint.Console
         {
             var builder = new DbContextOptionsBuilder();
             builder.UseSqlServer(@"server=(localdb)\ProjectsV13;database=NikamoozShopDb;integrated security=true");
-            using (var context = new NikamoozStoreContext(builder.Options))
+            using (var context = new ConsoleKarStoreContext(builder.Options))
             {
                 // EgerLoading(context);
                 //ServerVsClient(context);
@@ -26,14 +24,14 @@ namespace NikamoozShop.EndPoint.Console
             }
         }
 
-        private static void Update(NikamoozStoreContext context)
+        private static void Update(ConsoleKarStoreContext context)
         {
             var teacher = context.Teachers.FirstOrDefault(c => c.TeacherId == 1);
 
             if (teacher != null) teacher.LastName = "Vahid Kaveh";
         }
 
-        private static void GraphInsert(NikamoozStoreContext context)
+        private static void GraphInsert(ConsoleKarStoreContext context)
         {
             var course = new Course
             {
@@ -50,7 +48,7 @@ namespace NikamoozShop.EndPoint.Console
             context.Add(course);
         }
 
-        private static void StateCheck(NikamoozStoreContext context)
+        private static void StateCheck(ConsoleKarStoreContext context)
         {
             var teacher = new Teacher
             {
@@ -67,7 +65,7 @@ namespace NikamoozShop.EndPoint.Console
             var state03 = context.Entry(teacher).State;
         }
 
-        private static void ServerVsClient(NikamoozStoreContext context)
+        private static void ServerVsClient(ConsoleKarStoreContext context)
         {
             var result = context.Courses.Select(c => new
             {
@@ -79,7 +77,7 @@ namespace NikamoozShop.EndPoint.Console
             System.Console.WriteLine();
         }
 
-        private static void EgerLoading(NikamoozStoreContext context)
+        private static void EgerLoading(ConsoleKarStoreContext context)
         {
             var listCourse = context.Courses.Include(c => c.Comments).Include(c => c.CourseTeachers)
                 .ThenInclude(c => c.Teacher).ToList();

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using NikamoozShop.Services.Contract.IRepositories;
+using ConsoleKarShop.Services.Contract.IRepositories;
 
-namespace NikamoozShop.Infrastructures.EF.Repositories
+namespace ConsoleKarShop.Infrastructures.EF.Repositories
 {
     public class Repository<TEntity> : IRepositories<TEntity> where TEntity : class
     {

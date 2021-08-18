@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NikamoozShop.Services.Contract.IRepositories
+namespace ConsoleKarShop.Services.Contract.IRepositories
 {
     public interface IUnitOfWork:IDisposable
     {

@@ -1,15 +1,15 @@
-﻿using NikamoozShop.Infrastructures.EF;
+﻿using ConsoleKarShop.Infrastructures.EF;
 using System.Collections.Generic;
 using System.Linq;
 
 
-namespace NikamoozShop.Services.Services.Courses
+namespace ConsoleKarShop.Services.Services.Courses
 {
     public class CourseService
     {
-        private readonly NikamoozStoreContext _context;
+        private readonly ConsoleKarStoreContext _context;
 
-        public CourseService(NikamoozStoreContext context)
+        public CourseService(ConsoleKarStoreContext context)
         {
             _context = context;
         }

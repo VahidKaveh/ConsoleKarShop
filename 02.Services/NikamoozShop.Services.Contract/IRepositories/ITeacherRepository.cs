@@ -1,6 +1,6 @@
-﻿using NikamozzShop.Domain.Entites;
+﻿using ConsoleKarShop.Domain.Entites;
 
-namespace NikamoozShop.Services.Contract.IRepositories
+namespace ConsoleKarShop.Services.Contract.IRepositories
 {
     public interface ITeacherRepository:IRepositories<Teacher>
     {

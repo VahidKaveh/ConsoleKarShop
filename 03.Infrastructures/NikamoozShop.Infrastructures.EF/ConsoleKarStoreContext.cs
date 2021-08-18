@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NikamozzShop.Domain.Entites;
+using ConsoleKarShop.Domain.Entites;
 
-namespace NikamoozShop.Infrastructures.EF
+namespace ConsoleKarShop.Infrastructures.EF
 {
-    public class NikamoozStoreContext : DbContext
+    public class ConsoleKarStoreContext : DbContext
     {
         
 
-        public NikamoozStoreContext(DbContextOptions option):base(option)
+        public ConsoleKarStoreContext(DbContextOptions option):base(option)
         {
         }
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Domain", "01.Domain", "{8CB5DCE1-9252-41A5-95C5-8ED74F3D5F1A}"
 EndProject
@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Infrastructures", "03.In
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.EndPoints", "04.EndPoints", "{32AAE7A0-E674-4A68-9332-88F4C6B3FF8F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikamozzShop.Domain.Entites", "01.Domain\NikamozzShop.Domain.Entites\NikamozzShop.Domain.Entites.csproj", "{CBF1581C-AA80-49C5-B045-F211B1C8670C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleKarShop.Domain.Entites", "01.Domain\NikamozzShop.Domain.Entites\ConsoleKarShop.Domain.Entites.csproj", "{CBF1581C-AA80-49C5-B045-F211B1C8670C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikamoozShop.Infrastructures.EF", "03.Infrastructures\NikamoozShop.Infrastructures.EF\NikamoozShop.Infrastructures.EF.csproj", "{0A736402-015B-4B56-BE4B-009DAFAB399C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleKarShop.Infrastructures.EF", "03.Infrastructures\NikamoozShop.Infrastructures.EF\ConsoleKarShop.Infrastructures.EF.csproj", "{0A736402-015B-4B56-BE4B-009DAFAB399C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikamoozShop.EndPoint.Console", "04.EndPoint\NikamoozShop.EndPoint.Console\NikamoozShop.EndPoint.Console.csproj", "{F5D4FAE6-AF96-4ED7-995D-E218B995F186}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleKarShop.EndPoint.Console", "04.EndPoint\NikamoozShop.EndPoint.Console\ConsoleKarShop.EndPoint.Console.csproj", "{F5D4FAE6-AF96-4ED7-995D-E218B995F186}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NikamoozShop.Services.Services", "02.Services\NikamoozShop.Services.Services\NikamoozShop.Services.Services.csproj", "{22EB6517-130F-4118-AC5F-393F3B4F4D42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleKarShop.Services.Services", "02.Services\NikamoozShop.Services.Services\ConsoleKarShop.Services.Services.csproj", "{22EB6517-130F-4118-AC5F-393F3B4F4D42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikamoozShop.Services.Contract", "02.Services\NikamoozShop.Services.Contract\NikamoozShop.Services.Contract.csproj", "{1843BB97-3916-4AA3-A413-5CFC4CFE1E53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleKarShop.Services.Contract", "02.Services\NikamoozShop.Services.Contract\ConsoleKarShop.Services.Contract.csproj", "{1843BB97-3916-4AA3-A413-5CFC4CFE1E53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

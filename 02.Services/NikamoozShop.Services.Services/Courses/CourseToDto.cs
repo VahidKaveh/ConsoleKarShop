@@ -1,8 +1,8 @@
-﻿using NikamozzShop.Domain.Entites;
+﻿using ConsoleKarShop.Domain.Entites;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NikamoozShop.Services.Services.Courses
+namespace ConsoleKarShop.Services.Services.Courses
 {
     public static class CourseToDto
     {

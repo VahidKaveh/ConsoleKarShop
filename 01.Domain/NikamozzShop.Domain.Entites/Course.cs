@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NikamozzShop.Domain.Entites
+namespace ConsoleKarShop.Domain.Entites
 {
     public class Course
     {

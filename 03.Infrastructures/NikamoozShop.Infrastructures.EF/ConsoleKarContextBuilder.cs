@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace NikamoozShop.Infrastructures.EF
+namespace ConsoleKarShop.Infrastructures.EF
 {
-    public class NikamoozContextBuilder:IDesignTimeDbContextFactory<NikamoozStoreContext>
+    public class ConsoleKarContextBuilder:IDesignTimeDbContextFactory<ConsoleKarStoreContext>
     {
-        public NikamoozStoreContext CreateDbContext(string[] args)
+        public ConsoleKarStoreContext CreateDbContext(string[] args)
         {
             var builder = new DbContextOptionsBuilder();
             builder.UseSqlServer(@"server=(localdb)\ProjectsV13;database=NikamoozShopDb;integrated security=true");
-            return new NikamoozStoreContext(builder.Options);
+            return new ConsoleKarStoreContext(builder.Options);
             
         }
     }

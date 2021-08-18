@@ -1,4 +1,4 @@
-﻿namespace NikamoozShop.Services.Services.Courses
+﻿namespace ConsoleKarShop.Services.Services.Courses
 {
     public class CourseDto
     {
