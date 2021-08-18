@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Domain\ConsoleKarShop.Domain.Entites\ConsoleKarShop.Domain.Entites.csproj" />
+    <ProjectReference Include="..\..\03.Infrastructures\ConsoleKarShop.Infrastructures.EF\ConsoleKarShop.Infrastructures.EF.csproj" />
+  </ItemGroup>
+
+</Project>

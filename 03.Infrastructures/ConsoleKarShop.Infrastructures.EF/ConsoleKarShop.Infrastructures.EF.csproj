@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\01.Domain\NikamozzShop.Domain.Entites\ConsoleKarShop.Domain.Entites.csproj" />
-    <ProjectReference Include="..\..\02.Services\NikamoozShop.Services.Contract\ConsoleKarShop.Services.Contract.csproj" />
+    <ProjectReference Include="..\..\01.Domain\ConsoleKarShop.Domain.Entites\ConsoleKarShop.Domain.Entites.csproj" />
+    <ProjectReference Include="..\..\02.Services\ConsoleKarShop.Services.Contract\ConsoleKarShop.Services.Contract.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using ConsoleKarShop.Domain.Entites;
+using ConsoleKarShop.Infrastructures.EF;
 using Microsoft.EntityFrameworkCore;
 
 namespace ConsoleKarShop.EndPoint.Console
@@ -9,7 +11,7 @@ namespace ConsoleKarShop.EndPoint.Console
         private static void Main(string[] args)
         {
             var builder = new DbContextOptionsBuilder();
-            builder.UseSqlServer(@"server=(localdb)\ProjectsV13;database=NikamoozShopDb;integrated security=true");
+            builder.UseSqlServer(@"server=(localdb)\MSSQLLocalDB;database=ConsoleKarShopDb;integrated security=true");
             using (var context = new ConsoleKarStoreContext(builder.Options))
             {
                 // EgerLoading(context);
